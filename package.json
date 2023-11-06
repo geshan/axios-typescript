@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/geshan/axios-typescript/issues"
   },
-  "homepage": "https://github.com/geshan/axios-typescript#readme"
+  "homepage": "https://github.com/geshan/axios-typescript#readme",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.8.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
 }
