@@ -1,4 +1,4 @@
-import axios, { AxiosResponse, AxiosRequestConfig } from 'axios';
+import axios, { AxiosResponse, AxiosRequestConfig, RawAxiosRequestHeaders } from 'axios';
 
 const client = axios.create({
   baseURL: 'https://api.github.com',
@@ -19,7 +19,7 @@ type githubUser = {
   const config: AxiosRequestConfig = {
     headers: {
       'Accept': 'application/vnd.github+json',
-    },    
+    } as RawAxiosRequestHeaders,
   };
   const queryString: string = `q=${encodeURIComponent('followers:>=60000')}&sort=followers&order=desc`;
   try {
@@ -30,7 +30,7 @@ type githubUser = {
     const userResponse: AxiosResponse = await client.get(`/users/${username}`, config);
     const user: githubUser = userResponse.data;
     const followersCount = user.followers;
-    
+
     console.log(`The most followed user on GitHub is "${username}" with ${followersCount} followers.`)
   } catch(err) {
     console.log(err);
