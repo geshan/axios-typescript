@@ -1,0 +1,20 @@
+{
+  "name": "axios-typescript",
+  "version": "1.0.0",
+  "description": "Axios with typescript example for a blog post",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geshan/axios-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geshan/axios-typescript/issues"
+  },
+  "homepage": "https://github.com/geshan/axios-typescript#readme"
+}
