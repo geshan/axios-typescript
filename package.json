@@ -4,6 +4,8 @@
   "description": "Axios with typescript example for a blog post",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +24,8 @@
     "@types/node": "^20.8.10",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
   }
 }
